@@ -243,7 +243,7 @@ export default function App() {
                 <div className="col-span-1 lg:col-span-5">
                   <div className="relative rounded-3xl overflow-hidden border border-border-color shadow-sm bg-soft-linen flex items-center justify-center h-fit max-h-fit">
                     <img
-                      src="/hero.png"
+                      src="/hero.webp"
                       alt="Aarasta premium sunlit interior setup"
                       referrerPolicy="no-referrer"
                       style={{ maxHeight: "100%" }}

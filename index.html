@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       // Workaround for sandboxed environments where window.fetch is a read-only getter.
-      // Making it writable prevents transitive polyfills (like formdata-polyfill) from crashing on boot.
+      // Defining a custom getter and setter prevents transitive polyfills (like formdata-polyfill) from crashing on boot.
       (function() {
         try {
           var originalFetch = window.fetch;
           if (originalFetch) {
+            var customFetch = originalFetch;
             Object.defineProperty(window, 'fetch', {
-              value: originalFetch,
-              writable: true,
-              configurable: true
+              get: function() {
+                return customFetch;
+              },
+              set: function(val) {
+                customFetch = val;
+              },
+              configurable: true,
+              enumerable: true
             });
           }
         } catch (e) {
-          console.warn("Could not make window.fetch writable:", e);
+          try {
+            var originalFetchProto = Window.prototype.fetch;
+            if (originalFetchProto) {
+              var customFetchProto = originalFetchProto;
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: function() {
+                  return customFetchProto;
+                },
+                set: function(val) {
+                  customFetchProto = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (err) {
+            console.warn("Could not patch window.fetch with getter/setter:", err);
+          }
         }
       })();
     </script>
