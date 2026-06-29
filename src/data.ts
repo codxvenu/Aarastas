@@ -24,7 +24,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Hand-sculpted sand-colored stone with micro-burnished details.",
     category: "Vintage",
     price: "₹28,000",
-    image: "/images/idols/buddha1.png",
+    image: "/images/vintage/buddha1.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "Sculpted from a single block of natural sandstone sourced from the Vindhyan range, this Buddha portrait captures the transcendental peace of classic Sarnath sculpture. The surface has been hand-rubbed with fine river silt to yield a matte, velvety texture.",
     material: "Solid Vindhyan Sandstone",
@@ -40,7 +40,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Traditional seated form with ancient organic black-wax finish.",
     category: "Vintage",
     price: "₹18,200",
-    image: "/images/idols/ganesha.png",
+    image: "/images/vintage/ganesha.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "Representing the gentle removal of obstacles and the threshold of new beginnings. This solid metal Ganesha exhibits historic Bastar tribal features: elongated limb structure, simple wire-overlay textures, and an open, compassionate demeanor.",
     material: "Solid Dhokra Bell Metal",
@@ -56,7 +56,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Heavy sand-cast solid brass with a hand-burnished oil finish.",
     category: "Home Accessories",
     price: "₹19,500",
-    image: "/images/idols/ganesha1.png",
+    image: "/images/home-accessories/ganesha1.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "A classical heavy representation of Lord Ganesha in a peaceful sitting posture. Poured in sand molds, this brass piece is heavy and solid, featuring a soft oil-rubbed finish that highlights the elegant contours of his trunk, ears, and crown.",
     material: "Pure Yellow Brass Alloy",
@@ -88,7 +88,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Graceful standing Venugopala pose in a soft dark brass finish.",
     category: "Home Accessories",
     price: "₹16,800",
-    image: "/images/idols/krishna.png",
+    image: "/images/home-accessories/krishna.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "Capturing the serene posture of Venugopala—Krishna playing his flute under the sacred Kadamba tree. The statue is cast in a beautiful dark antique brass finish, focusing on clean lines and fluid posture rather than excessive modern ornamentation.",
     material: "Antique Finish Solid Brass",
@@ -104,7 +104,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Heirloom-grade solid bronze with heavy weight and soft golden highlights.",
     category: "Vintage",
     price: "₹21,000",
-    image: "/images/idols/krishna1.png",
+    image: "/images/vintage/krishna1.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "Inspired by medieval Chola bronze casting traditions, this Krishna idol is heavy, balanced, and exhibits remarkable serenity. His raised hands and tilted crown present a balanced visual symmetry, representing divine beauty and poise.",
     material: "Generational Cast Bell Bronze",
@@ -120,7 +120,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "Warm, grounding laughing Buddha carved in solid dense timber.",
     category: "Home Accessories",
     price: "₹14,500",
-    image: "/images/idols/laughingbudha.png",
+    image: "/images/home-accessories/laughingbudha.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "Representing magnanimity, abundance, and cheerful hospitality. This Hotei figure is carved from highly seasoned, dense mango-wood stumps. The natural grain lines trace the contours of his round, laughing form, giving it an earthy, tactile presence.",
     material: "Solid Seasoned Mango Wood",
@@ -152,7 +152,7 @@ export const masterProducts: Record<string, ProductDetail> = {
     subtitle: "A miniature architectural sanctuary carved from grey soapstone.",
     category: "Home Accessories",
     price: "₹34,000",
-    image: "/images/idols/temple.png",
+    image: "/images/home-accessories/temple.png",
     secondaryImages: ["/images/category_idols.png"],
     story: "This miniature structural temple is carved from natural soft talc (soapstone), featuring detailed columns, geometric step-backs, and a hollow inner sanctuary designed to shelter a single small oil vessel or metal idol. It is a stunning visual meditation on sacred Indian geometry.",
     material: "Natural Soft Talc Soapstone",
@@ -417,21 +417,21 @@ export const newArrivals = [
     id: "temple",
     title: "Hand-Carved Soapstone Temple",
     price: "₹34,000",
-    image: "/images/idols/temple.png",
+    image: "/images/home-accessories/temple.png",
     tag: "Soapstone"
   },
   {
     id: "buddha1",
     title: "Stone-Carved Buddha Shrine",
     price: "₹28,000",
-    image: "/images/idols/buddha1.png",
+    image: "/images/vintage/buddha1.png",
     tag: "Sandstone"
   },
   {
     id: "ganesha1",
     title: "The Shanti Brass Ganesha",
     price: "₹19,500",
-    image: "/images/idols/ganesha1.png",
+    image: "/images/home-accessories/ganesha1.png",
     tag: "Solid Brass"
   }
 ];
@@ -537,9 +537,9 @@ export const homeTestimonials: Testimonial[] = [
 // Instagram Section (Beautiful masonry)
 export const instagramPosts = [
   { id: "i-1", image: "/images/idols/buddha.png", ratio: "aspect-square" },
-  { id: "i-2", image: "/images/idols/ganesha1.png", ratio: "aspect-[3/4]" },
-  { id: "i-3", image: "/images/idols/temple.png", ratio: "aspect-[3/2]" },
+  { id: "i-2", image: "/images/home-accessories/ganesha1.png", ratio: "aspect-[3/4]" },
+  { id: "i-3", image: "/images/home-accessories/temple.png", ratio: "aspect-[3/2]" },
   { id: "i-4", image: "/images/idols/shiva.png", ratio: "aspect-square" },
-  { id: "i-5", image: "/images/idols/buddha1.png", ratio: "aspect-[3/4]" },
+  { id: "i-5", image: "/images/vintage/buddha1.png", ratio: "aspect-[3/4]" },
   { id: "i-6", image: "/images/idols/ganesha2.png", ratio: "aspect-square" }
 ];
